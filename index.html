@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Mario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Mario</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#cursus">Cursus</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#avenir">Avenir</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">🌓</button></li>
+            </ul>
+        </nav>
+    </header>
+     <img src="C:\Users\sospa\Desktop\portfolio\profile-pic (2).png " alt="Mario SOSSOE" width="200" height="200" style="margin-left:150px;margin-top: 10px;">
+
+    <section id="hero" class="fade-in" style=" background-repeat:no-repeat; background-image:url(img\back.jpg);">
+        <h1 style="background: linear-gradient(to right, #36ecde, #000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;">Bienvenue sur mon Portfolio</h1>
+        
+        <p style="margin-bottom: 30px ;">Je m’appelle Mario Sossoe, passionné par la cybersécurité et les réseaux. Mon parcours, depuis mon arrivée en France jusqu’à mon inscription en master cybersécurité à l’IPSSI, a été jalonné de découvertes, de défis et d’apprentissages passionnants.
+Avec une solide formation en Réseaux et Télécoms et des expériences professionnelles concrètes (analyste SOC, pentest, gestion des vulnérabilités), j’ai consolidé mes compétences et développé une véritable expertise dans la sécurisation des systèmes d’information.
+À travers ce portfolio, je vous invite à découvrir mes projets académiques, mes expériences professionnelles et mes ambitions pour l’avenir.</p>
+        <a href="#cursus" class="cta-button" >Découvrir mon parcours</a>
+    </section>
+
+    <section id="cursus" class="fade-in">
+    <h2>🎓 Mon Parcours</h2>
+    <div class="cursus-timeline">
+        <div class="cursus-item">
+            <h3>2022-2025 : BUT Réseaux & Télécoms - Sorbonne Paris Nord</h3>
+            <p>Spécialisation en cybersécurité et télécommunications. Projets académiques concrets (IDS, serveurs, pentest). Développement d’une expertise solide et d’une compréhension avancée des réseaux et systèmes.</p>
+        </div>
+        <div class="cursus-item">
+            <h3>2021-2022 : L2 Administration Systèmes et Sécurité Réseaux - ESIG Global Success</h3>
+            <p>Approfondissement des connaissances en systèmes d’exploitation (Linux, Windows), virtualisation, et sécurité des réseaux. Initiation à la gestion de projet et aux bonnes pratiques en cybersécurité.</p>
+        </div>
+        <div class="cursus-item">
+            <h3>2019-2021 : Baccalauréat II Série D - Lycée Notre-Dame de la Trinité</h3>
+            <p>Formation générale avec un focus sur les sciences, préparant à l’enseignement supérieur en informatique et télécoms.</p>
+        </div>
+    </div>
+</section>
+
+
+    <section id="experiences" class="fade-in">
+        <h2>💼 Mes Expériences Professionnelles</h2>
+        <div class="grid">
+            <div class="exp-card" onclick="showPopup('popup-willlabs')">
+                <h3>Stage - Will-Labs</h3>
+                <p style="text-decoration: underline;color: rgb(21, 106, 163);">Cliquez pour en savoir plus.</p>
+            </div>
+            <div class="exp-card" onclick="showPopup('popup-maureletprom')">
+                <h3>Stage - Maurel & Prom</h3>
+                <p style="text-decoration: underline;color: rgb(21, 106, 163);">Cliquez pour en savoir plus.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="popup-willlabs" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="hidePopup('popup-willlabs')">&times;</span>
+            <h3>Stage - Will-Labs</h3>
+            <p>Durant ce stage, j’ai participé à l’implémentation et la configuration d’un serveur NAS pour centraliser les données d’une PME, à la conception d’un réseau sécurisé avec configuration de routeurs, switches et points d’accès. Outils : Cisco, Debian, VirtualBox. Ce projet m’a permis d’apprendre à travailler en équipe et à garantir la sécurité et la fiabilité d’un réseau.</p>
+        </div>
+    </div>
+
+    <div id="popup-maureletprom" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="hidePopup('popup-maureletprom')">&times;</span>
+            <h3>Stage - Maurel & Prom</h3>
+            <p>Intégré au SOC, j’ai participé à l’analyse des alertes, à la gestion des vulnérabilités (outils : CrowdStrike, ManageEngine), et à des tests d’intrusion (Metasploit, Nessus). Ce stage m’a confronté à la réalité du terrain, m’a permis de développer mes capacités d’analyse et d’appliquer mes connaissances en cybersécurité avec rigueur et éthique.</p><img src="img/Maurel.png" alt="IDS Snort">
+        </div>
+    </div>
+
+    <section id="projets" class="fade-in">
+        <h2>📚 Projets Académiques</h2>
+        <div class="grid">
+            <div class="project-card" onclick="showPopup('popup-snort')">
+                <h3>IDS Snort</h3>
+                <p style="text-decoration: underline;color: rgb(21, 106, 163);">Cliquez pour découvrir ce projet !</p>
+            </div>
+            <div class="project-card" onclick="showPopup('popup-zentyal')">
+                <h3>Serveur Zentyal</h3>
+                <p style="text-decoration: underline;color: rgb(21, 106, 163);">Cliquez pour découvrir ce projet !</p>
+            </div>
+            <div class="project-card" onclick="showPopup('popup-radius')">
+                <h3>RADIUS sécurisé</h3>
+                <p style="text-decoration: underline;color: rgb(21, 106, 163);">Cliquez pour découvrir ce projet !</p>
+            </div>
+            <div class="project-card" onclick="showPopup('popup-gophish')">
+                <h3>Campagne Gophish</h3>
+                <p style="text-decoration: underline;color: rgb(21, 106, 163);">Cliquez pour découvrir ce projet !</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="popup-snort" class="popup"><div class="popup-content"><span class="close" onclick="hidePopup('popup-snort')">&times;</span><h3>IDS Snort</h3><p>Projet académique lors de la semaine de professionnalisation : mise en place d’un IDS avec Snort, d’abord via Pfsense, puis sur un serveur Ubuntu dédié. Ce projet m’a permis d’apprendre la configuration des règles de détection et la surveillance du trafic en temps réel.</p><img src="img/snort.jpg" alt="IDS Snort"></div></div>
+
+    <div id="popup-zentyal" class="popup"><div class="popup-content"><span class="close" onclick="hidePopup('popup-zentyal')">&times;</span><h3>Serveur Zentyal</h3><p>Projet scolaire pendant la semaine de professionnalisation : configuration d’un serveur Zentyal pour une messagerie d’entreprise dans un environnement simulé. Ce projet m’a permis de comprendre les rouages des services réseau.</p><img src="img/zentyal.png" alt="Serveur Zentyal"></div></div>
+
+    <div id="popup-radius" class="popup"><div class="popup-content"><span class="close" onclick="hidePopup('popup-radius')">&times;</span><h3>RADIUS sécurisé</h3><p>Conception d’un système d’authentification sécurisé avec Pfsense, RADIUS et MySQL, pour simuler l’intégration d’un réseau sécurisé. Ce projet m’a permis de mettre en pratique les notions de sécurité réseau et d’authentification centralisée.</p><img src="img/radius (2).png" alt="RADIUS sécurisé"></div></div>
+
+    <div id="popup-gophish" class="popup"><div class="popup-content"><span class="close" onclick="hidePopup('popup-gophish')">&times;</span><h3>Campagne Gophish</h3><p>Projet académique supervisé : simulation d’une campagne d’hameçonnage avec Gophish, en usurpant l’identité de l’école. Ce projet m’a permis de découvrir les techniques de phishing et d’en comprendre l’impact et les mesures préventives.</p><img src="img/gophish.png" alt="Gophish"></div></div>
+
+    <section id="competences" class="fade-in">
+    <h2>🛠️ Mes Compétences</h2>
+    <div class="competence-grid">
+        <div class="competence-block">
+            <h3>🔒 Cybersécurité</h3>
+            <ul>
+                <li><strong>CrowdStrike Falcon :</strong> Analyse des alertes, gestion proactive des menaces.</li>
+                <li><strong>Snort & pfSense :</strong> Détection d’intrusions, configuration, surveillance réseau.</li>
+                <li><strong>SIEM ELK & GoAccess :</strong> Analyse et visualisation des logs en temps réel.</li>
+                <li><strong>Pentest :</strong> Utilisation de Metasploit, Nessus, Burp Suite pour évaluer et corriger les vulnérabilités.</li>
+            </ul>
+        </div>
+        <div class="competence-block">
+            <h3>🌐 Réseaux</h3>
+            <ul>
+                <li><strong>Configuration :</strong> VLAN, DHCP, DNS, NAT, VPN.</li>
+                <li><strong>Outils :</strong> Cisco, Debian, VMware pour conception et simulation.</li>
+                <li><strong>Sécurisation :</strong> Mise en place de tunnels et politiques d’accès.</li>
+            </ul>
+        </div>
+        <div class="competence-block">
+            <h3>👨‍💻 Programmation</h3>
+            <ul>
+                <li><strong>Langages :</strong> HTML, CSS, Python, Bash, notions de SQL.</li>
+                <li><strong>Automatisation :</strong> Scripts pour la sécurité et la gestion des systèmes.</li>
+            </ul>
+        </div>
+        <div class="competence-block">
+            <h3>🤝 Soft Skills</h3>
+            <ul>
+                <li><strong>Gestion de projet :</strong> Méthode Scrum, coordination et respect des délais.</li>
+                <li><strong>Communication :</strong> Rédaction claire, présentations orales.</li>
+                <li><strong>Esprit d’équipe :</strong> Adaptabilité et collaboration dans des environnements variés.</li>
+            </ul>
+        </div>
+        <div class="competence-block">
+            <h3>🎓 Certifications</h3>
+            <ul>
+                <li><strong>Mooc ANSSI :</strong> Fondamentaux de la cybersécurité.</li>
+                <li><strong>CompTIA Security+ :</strong> En préparation (2025).</li>
+                <li><strong>eJPT, OSCP, CISSP :</strong> Objectifs à moyen et long terme.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <section id="avenir" class="fade-in perspective-section">
+    <h2>🚀 Mes Perspectives</h2>
+    <p>Mon ambition est de devenir un acteur clé dans le domaine de la cybersécurité. Je suis actuellement inscrit en Master Cybersécurité à l’IPSSI, que je poursuis en alternance afin de mettre en pratique mes compétences et d’acquérir une expérience concrète. Mon objectif est de devenir analyste cybersécurité ou de rejoindre un SOC pour contribuer activement à la protection des systèmes d’information.</p>
+    <p>À moyen terme, je vise le poste de **Responsable Sécurité des Systèmes d’Information (RSSI)**, où je pourrai coordonner les stratégies de sécurité, accompagner les équipes, et anticiper les menaces pour garantir la résilience des organisations.</p>
+    <p>Je suis motivé par les défis, passionné par les technologies, et prêt à évoluer constamment pour répondre aux enjeux de demain.</p>
+</section>
+
+
+    <section id="contact" class="fade-in">
+        <h2><i class="fa-solid fa-house"></i> Contact</h2>
+        <form><input type="text" placeholder="Nom"><input type="email" placeholder="Email"><textarea placeholder="Message"></textarea><button>Envoyer</button></form>
+        <div class="socials"><a href="https://www.linkedin.com/in/paolo-mario-sossoe/">Linkedin</a></div>
+    </section>
+
+    <footer style="text-align: center;"><p style="text-align: center; align-items: center; text-justify: justify-content; margin-left: 600px;">&copy; 2025 Mario. Tous droits réservés.</p></footer>
+</body>
+</html>
